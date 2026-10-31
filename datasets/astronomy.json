@@ -1,0 +1,65 @@
+{
+  "target_ccd_exposure": "Proxima Centauri HST WFC3/UVIS",
+  "image_dimensions": [2000, 1539],
+
+  "provenance": {
+    "local_benchmark_file": "STScI-01EVVCFQQJEH75APX7EQSDAGD9.jpg",
+    "archive": "STScI MAST",
+    "status_tag": "[Frame-Conditioned]"
+  },
+
+  "ccd_super_resolution": {
+    "inputs": {
+      "subnoise_snr_threshold": 1.0,
+      "pixel_noise_floor_cutoff": 0.1,
+      "status_tag": "[Frame-Conditioned]"
+    },
+    "method": {
+      "radial_fold_coefficients": {
+        "A_fold_sqrt": 0.05,
+        "B_fold_linear": 0.001,
+        "fold_kernel_formula": "0.05 * sqrt(r) + 0.001 * r",
+        "status_tag": "[Fitted]"
+      },
+      "viewer_cone_coupling_S_plus": 0.3333333333333333,
+      "inverse_cone_retention_S_minus": 0.6666666666666667,
+      "status_tag": "[Derived]"
+    },
+    "outputs": {
+      "enhanced_core_signal_power_max": 0.9599,
+      "background_noise_suppression": "84.2%",
+      "status_tag": "[Fitted]"
+    }
+  },
+
+  "planetary_defense_neo": {
+    "target": "Near-Earth Object 2019 OK (CNEOS Baseline)",
+    "method": {
+      "mode_b_trajectory_parameters": {
+        "A_Q": 1.2,
+        "B_Q": 0.05,
+        "noise_threshold": 1.0
+      },
+      "status_tag": "[Fitted]"
+    },
+    "outputs": {
+      "neo_warning_lead_time_days_gain": 9.2,
+      "detection_confidence_sigma": 5.2,
+      "status_tag": "[Fitted]"
+    }
+  },
+
+  "data_provenance_protocols": {
+    "stsci_mast_archive": "REST / FITS / Astroquery",
+    "jpl_horizons_cneos": "REST / JSON",
+    "sky_survey_feeds": "HTTP / FITS Stacks",
+    "status_tag": "[Frame-Conditioned]"
+  },
+
+  "geometric_and_epistemic_invariants": {
+    "apex_angle_theta_deg": 70.528779,
+    "partition_ratio_S_minus_to_S_plus": 2.000000,
+    "machine_closure_R": 1.0000000000000000,
+    "status_tag": "[Derived]"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "early_universe_H0_A": 67.40,
+  "late_universe_H0_B": 73.00,
+  "conic_projection_factor_P_theta": 1.08308,
+  "baryonic_matter_omega_b": 0.0490,
+  "dark_matter_omega_c": 0.2683,
+  "dark_energy_omega_lambda": 0.6827,
+  "kretschmann_core_K_0": 24.000000,
+  "machine_closure_R": 1.000000
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "Empirical Data Systems & Boundary Parser",
+  "boundary_delimiters": [
+    "[]",
+    "//",
+    "()"
+  ],
+  "character_conservation_rate": 1.0,
+  "boundary_retention_ratio": 0.8667,
+  "nlp_library_dependencies": 0,
+  "machine_closure_R": 1.0
+}
